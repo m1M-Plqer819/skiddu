@@ -135,6 +135,38 @@ mimTabs.Main:AddButton({
 
                     end
                 })
+mimTabs.Main:AddButton({
+    Title = "fumo kaitun",
+    Description = "cf by m1M (hohohub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/kaitunfv/rp0d.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (synergy hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/syn.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (w-azure hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/auy.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (not recommanded banana hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/bane.lua"))()
+
+                    end
+                })
 --player
 local Slider = plTabs.Main:AddSlider("Slider", {
     Title = "Player Speed",
@@ -159,7 +191,7 @@ local Slider = plTabs.Main:AddSlider("Slider", {
     end
 })
 --Misc
-miscTabs.Main:AddButton({
+mimTabs.Main:AddButton({
     Title = "fumo kaitun",
     Description = "cf by m1M (hohohub)",
     Callback = function()
@@ -167,7 +199,7 @@ miscTabs.Main:AddButton({
 
                     end
                 })
-miscTabs.Main:AddButton({
+mimTabs.Main:AddButton({
     Title = "auto bounty",
     Description = "cf by m1M (synergy hub)",
     Callback = function()
@@ -175,7 +207,7 @@ miscTabs.Main:AddButton({
 
                     end
                 })
-miscTabs.Main:AddButton({
+mimTabs.Main:AddButton({
     Title = "auto bounty",
     Description = "cf by m1M (w-azure hub)",
     Callback = function()
@@ -183,7 +215,7 @@ miscTabs.Main:AddButton({
 
                     end
                 })
-miscTabs.Main:AddButton({
+mimTabs.Main:AddButton({
     Title = "auto bounty",
     Description = "cf by m1M (not recommanded banana hub)",
     Callback = function()
