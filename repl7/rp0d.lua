@@ -4,9 +4,10 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
     Title = "m1M " .. Fluent.Version,
-    SubTitle = "by minh-m.1.M",
+    SubTitle = "by m1M",
+    Keybind = "LeftControl",
     TabWidth = 120,
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(480, 360),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Light",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
@@ -15,146 +16,125 @@ local Window = Fluent:CreateWindow({
 local creditTabs = {
     Main = Window:AddTab({ Title = "Credit", Icon = "home" }),
 }
-local scriptsTabs = {
-    Main = Window:AddTab({ Title = "script", Icon = "apple" }),
+local scriptTabs = {
+    Main = Window:AddTab({ Title = "gaf", Icon = "apple" }),
+    
 }
 local mimTabs = {
-    Main = Window:AddTab({ Title = "m1M", Icon = "settings"})
-}
-local miscTabs = {
-    Main = Window:AddTab({ Title = "Mics", Icon = "wrench"})
+    Main = Window:AddTab({ Title = "mine", Icon = "settings"})
 }
 local plTabs = {
     Main = Window:AddTab({ Title = "Player", Icon = "baby"})
 }
+local miscTabs = {
+    Main = Window:AddTab({ Title = "Mics", Icon = "wrench"})
+}
 --mentions
 creditTabs.Main:AddParagraph({
-    Title = "https://bio.site/m1m",
-    Content = "my bio"
+    Title = "maybe",
+    Content = "SCRIPT MADE BY m1M \n ty for using"
 })
-creditTabs.Main:AddParagraph({
-    Title = "m1h",
-    Content = "SCRIPT MADE BY m1M"
+scriptTabs.Main:AddParagraph({
+    Title = "iiii",
+    Content = "discord.gg/ .\nclick to use any script"
 })
 creditTabs.Main:AddParagraph({
     Title = "https://dsc.gg/m1m-link",
-    Content = "join my discord server"
+    Content = "JOIN MY DISCORD SERVER"
 })
-scriptTabs.Main:AddParagraph({
-    Title = "here",
-    Content = "click to use any script"
+creditTabs.Main:AddParagraph({
+    Title = "https://bio.site/m1m",
+    Content = "MY bio"
+})
+mimTabs.Main:AddParagraph({
+    Title = "another",
+    Content = "SCRIPT MADE BY m1M \n ty for using"
 })
 --toggles
 --bf
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "REDz Hub",
-    Description = "Key: No Key - blox fruits",
+    Description = "Key: No Key",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/redz/main/xhub/rp0d.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "MTriet Hub",
-    Description = "Key: No Key - blox fruits",
+    Description = "Key: No Key",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/mt/main/xhub/rp0d.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "FaiFao Hub",
-    Description = "Key: No Key - blox fruits",
+    Description = "Key: No Key",
     Callback = function()
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/m1M-Plqer819/faifaov2/main/xhub/rp0d.lua")()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua")()
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "W-Azure v2",
-    Description = "Key: No Key - https://discord.gg/w-azure",
+    Description = ".gg/w-azure",
     Callback = function()
         getgenv().Team = "Pirates"
 getgenv().FixCrash = false
 getgenv().FixCrash2 = false
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "Vector Hub",
-    Description = "Key: No Key - https://discord.gg/jMgukPuVXD",
+    Description = ".gg/jMgukPuVXD",
     Callback = function()
         _G.Mode = "English"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/vector/main/xhub/rp0d.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MBPC"))()
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "HoHo Hub",
-    Description = "Key: Get Key - discord.gg/hohohub",
+    Description = ".gg/hohohub",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/main/rp0d.lua'))()
+
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "Annie Hub",
-    Description = "Key: No Key - blox fruits",
+    Description = "Key: No Key",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/m1M-Plqer819/annie/main/hub/rpod.lua'))()
+
                     end
                 })
-scriptsTabs.Main:AddButton({
+scriptTabs.Main:AddButton({
     Title = "Xero Hub",
-    Description = "Key: No Key - blox fruits",
+    Description = "Key: No Key",
     Callback = function()
         getgenv().Team = "Marines" -- Pirates/Marines
         loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/main/main.lua"))()
 
                     end
                 })
---m1m
+--mim
 mimTabs.Main:AddButton({
-    Title = "keyboard",
-    Description = "Key: no Key",
+    Title = "Zap Hub",
+    Description = "Key: Get Key",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Red_BloxZ/main/keyboard-script/M1m-reup.lua"))();
+        loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+
                     end
                 })
 mimTabs.Main:AddButton({
-    Title = "all games",
-    Description = "Key: no Key",
+    Title = "Sky Hub",
+    Description = "Key: Get Key",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))();
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))()
+
                     end
                 })
-mimTabs.Main:AddButton({
-    Title = "kaitun fv",
-    Description = "Key: get Key - hoho hub fumo kaitun",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/kaitunfv/rp0d.lua"))();
-                    end
-                })
---misc
-miscTabs.Main:AddParagraph({
-    Title = "discord",
-    Content = "https://dsc.gg/m1m-link"
-})
-miscTabs.Main:AddParagraph({
-    Title = "free excutor link",
-    Content = "https://dsc.gg/m1m-link"
-})
-miscTabs.Main:AddParagraph({
-    Title = "fruits stock",
-    Content = "https://dsc.gg/m1m-link"
-})
-miscTabs.Main:AddParagraph({
-    Title = "script share",
-    Content = "https://dsc.gg/m1m-link"
-})
-miscTabs.Main:AddParagraph({
-    Title = "bypass flux key",
-    Content = "https://dsc.gg/m1m-link"
-})
-miscTabs.Main:AddParagraph({
-    Title = "giveaway",
-    Content = "https://dsc.gg/m1m-link"
-})
 --player
 local Slider = plTabs.Main:AddSlider("Slider", {
     Title = "Player Speed",
