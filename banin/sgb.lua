@@ -1,6 +1,6 @@
 repeat wait()
 until game:IsLoaded()
-local TableChat = {"Prick","goodbye!","script by m1m","Fucker","sod","Bastard","Cunt","bitch","wanker","bugger","asshole","motherfucker","cocksucker","dickhead","sex","dick","pussy","arsehole","bollocks","fuck","piss","whore","tits"}
+local TableChat = {"Prick","goodbye!","script by m1m","sod","Bastard","Cunt","bitch","wanker","bugger","asshole","motherfucker","cocksucker","dickhead","dick","pussy","arsehole","bollocks","piss","whore","tits"}
 spawn(function()
     while wait() do 
         pcall(function()
