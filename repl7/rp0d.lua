@@ -50,6 +50,10 @@ mimTabs.Main:AddParagraph({
     Title = "another",
     Content = "SCRIPT MADE BY m1M \n ty for using"
 })
+miscTabs.Main:AddParagraph({
+    Title = "nothing here",
+    Content = "go back"
+})
 --toggles
 --bf
 scriptTabs.Main:AddButton({
@@ -190,36 +194,44 @@ local Slider = plTabs.Main:AddSlider("Slider", {
         game.Players.LocalPlayer.Character:SetAttribute("JumpPower",Value)
     end
 })
---Misc
-mimTabs.Main:AddButton({
-    Title = "fumo kaitun",
-    Description = "cf by m1M (hohohub)",
+plTabs.Main:AddButton({
+    Title = "script fly",
+    Description = "fly",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/kaitunfv/rp0d.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/fly"))()
 
                     end
                 })
-mimTabs.Main:AddButton({
-    Title = "auto bounty",
-    Description = "cf by m1M (synergy hub)",
+plTabs.Main:AddButton({
+    Title = "silent aim",
+    Description = "silentaim",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/syn.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/silentaim"))()
 
                     end
                 })
-mimTabs.Main:AddButton({
-    Title = "auto bounty",
-    Description = "cf by m1M (w-azure hub)",
+plTabs.Main:AddButton({
+    Title = "aimbot",
+    Description = "aim bot",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/auy.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/aimbot"))()
 
                     end
                 })
-mimTabs.Main:AddButton({
-    Title = "auto bounty",
-    Description = "cf by m1M (not recommanded banana hub)",
+plTabs.Main:AddButton({
+    Title = "inf jump",
+    Description = "jump",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/bane.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/infjump"))()
 
                     end
                 })
+plTabs.Main:AddButton({
+    Title = "esp",
+    Description = "esp",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/esp"))()
+
+                    end
+                })
+--misc
