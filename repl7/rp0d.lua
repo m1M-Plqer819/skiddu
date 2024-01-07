@@ -6,7 +6,7 @@ local Window = Fluent:CreateWindow({
     Title = "m1M " .. Fluent.Version,
     SubTitle = "by m1M",
     Keybind = "LeftControl",
-    TabWidth = 120,
+    TabWidth = 130,
     Size = UDim2.fromOffset(480, 360),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Light",
@@ -56,7 +56,7 @@ scriptTabs.Main:AddButton({
     Title = "REDz Hub",
     Description = "Key: No Key",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/redz/main/xhub/rp0d.lua"))()
 
                     end
                 })
@@ -64,14 +64,14 @@ scriptTabs.Main:AddButton({
     Title = "MTriet Hub",
     Description = "Key: No Key",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/mt/main/xhub/rp0d.lua"))()
                     end
                 })
 scriptTabs.Main:AddButton({
     Title = "FaiFao Hub",
     Description = "Key: No Key",
     Callback = function()
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua")()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/m1M-Plqer819/faifaov2/main/xhub/rp0d.lua")()
                     end
                 })
 scriptTabs.Main:AddButton({
@@ -90,7 +90,7 @@ scriptTabs.Main:AddButton({
     Description = ".gg/jMgukPuVXD",
     Callback = function()
         _G.Mode = "English"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MBPC"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/vector/main/xhub/rp0d.lua"))()
                     end
                 })
 scriptTabs.Main:AddButton({
@@ -120,18 +120,18 @@ scriptTabs.Main:AddButton({
                 })
 --mim
 mimTabs.Main:AddButton({
-    Title = "Zap Hub",
-    Description = "Key: Get Key",
+    Title = "skeid",
+    Description = "by m1M (troll)",
     Callback = function()
-        loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))(); 
 
                     end
                 })
 mimTabs.Main:AddButton({
-    Title = "Sky Hub",
-    Description = "Key: Get Key",
+    Title = "keyboard",
+    Description = "by red_bloxz",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Red_BloxZ/main/keyboard-script/M1m-reup.lua"))();
 
                     end
                 })
@@ -158,3 +158,36 @@ local Slider = plTabs.Main:AddSlider("Slider", {
         game.Players.LocalPlayer.Character:SetAttribute("JumpPower",Value)
     end
 })
+--Mics
+micsTabs.Main:AddButton({
+    Title = "fumo kaitun",
+    Description = "cf by m1M (hohohub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/kaitunfv/rp0d.lua"))();
+
+                    end
+                })
+micsTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (synergy hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/syn.lua"))();
+
+                    end
+                })
+micsTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (w-azure hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/auy.lua"))();
+
+                    end
+                })
+micsTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (not recommanded) (banana hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/bane.lua"))();
+
+                    end
+                })
