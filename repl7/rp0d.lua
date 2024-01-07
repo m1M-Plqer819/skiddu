@@ -158,32 +158,36 @@ local Slider = plTabs.Main:AddSlider("Slider", {
         game.Players.LocalPlayer.Character:SetAttribute("JumpPower",Value)
     end
 })
---Mics
-micsTabs.Main:AddButton({
+--Misc
+miscTabs.Main:AddButton({
     Title = "fumo kaitun",
     Description = "cf by m1M (hohohub)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/kaitunfv/rp0d.lua"))();
+
                     end
                 })
-micsTabs.Main:AddButton({
+miscTabs.Main:AddButton({
     Title = "auto bounty",
     Description = "cf by m1M (synergy hub)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/syn.lua"))();
+
                     end
                 })
-micsTabs.Main:AddButton({
+miscTabs.Main:AddButton({
     Title = "auto bounty",
     Description = "cf by m1M (w-azure hub)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/auy.lua"))();
+
                     end
                 })
-micsTabs.Main:AddButton({
+miscTabs.Main:AddButton({
     Title = "auto bounty",
     Description = "cf by m1M (not recommanded) (banana hub)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/bane.lua"))();
+
                     end
                 })
