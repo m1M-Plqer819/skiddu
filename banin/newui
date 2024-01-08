@@ -3,40 +3,40 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "m1M", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local 1Tab = Window:MakeTab({
+local oneTab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local 2Tab = Window:MakeTab({
+local twoTab = Window:MakeTab({
 	Name = "Tab 2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local 3Tab = Window:MakeTab({
+local threeTab = Window:MakeTab({
 	Name = "Tab 3",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-1Tabs.Main:AddParagraph({
+oneTabs.Main:AddParagraph({
     Title = "nothing here",
     Content = "go back"
 })
-1Tab:AddButton({
+oneTab:AddButton({
 	Name = "Button!",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/fly"))()
 
   	end    
 })
-1Tab:AddButton({
+oneTab:AddButton({
 	Name = "Button2",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))();
 
   	end    
 })
-2Tab:AddSlider({
+twoTab:AddSlider({
 	Name = "Slider",
 	Min = 18,
 	Max = 500,
@@ -48,7 +48,7 @@ local 3Tab = Window:MakeTab({
 		game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier",Value)
 	end    
 })
-2Tab:AddSlider({
+twoTab:AddSlider({
 	Name = "Slider",
 	Min = 18,
 	Max = 500,
