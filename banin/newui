@@ -8,20 +8,24 @@ local oneTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 local twoTab = Window:MakeTab({
 	Name = "Tab 2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 local threeTab = Window:MakeTab({
 	Name = "Tab 3",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 oneTabs.Main:AddParagraph({
     Title = "nothing here",
     Content = "go back"
 })
+
 oneTab:AddButton({
 	Name = "Button!",
 	Callback = function()
@@ -29,6 +33,7 @@ oneTab:AddButton({
 
   	end    
 })
+
 oneTab:AddButton({
 	Name = "Button2",
 	Callback = function()
@@ -36,6 +41,7 @@ oneTab:AddButton({
 
   	end    
 })
+
 twoTab:AddSlider({
 	Name = "Slider",
 	Min = 18,
@@ -48,6 +54,7 @@ twoTab:AddSlider({
 		game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier",Value)
 	end    
 })
+
 twoTab:AddSlider({
 	Name = "Slider",
 	Min = 18,
