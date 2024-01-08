@@ -9,24 +9,18 @@ local oneTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local twoTab = Window:MakeTab({
+local PlayerTab = Window:MakeTab({
 	Name = "Tab 2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-local threeTab = Window:MakeTab({
-	Name = "Tab 3",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-oneTabs.Main:AddParagraph({
+Tabs.Main:AddParagraph({
     Title = "nothing here",
     Content = "go back"
 })
 
-oneTab:AddButton({
+Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/fly"))()
@@ -34,7 +28,7 @@ oneTab:AddButton({
   	end    
 })
 
-oneTab:AddButton({
+Tab:AddButton({
 	Name = "Button2",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))();
@@ -42,7 +36,7 @@ oneTab:AddButton({
   	end    
 })
 
-twoTab:AddSlider({
+PlayerTab:AddSlider({
 	Name = "Slider",
 	Min = 18,
 	Max = 500,
@@ -55,7 +49,7 @@ twoTab:AddSlider({
 	end    
 })
 
-twoTab:AddSlider({
+PlayerTab:AddSlider({
 	Name = "Slider",
 	Min = 18,
 	Max = 500,
