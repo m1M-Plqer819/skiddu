@@ -3,23 +3,60 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "m1M", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local Tab = Window:MakeTab({
+local 1Tab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddButton({
+local 2Tab = Window:MakeTab({
+	Name = "Tab 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local 3Tab = Window:MakeTab({
+	Name = "Tab 3",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+1Tabs.Main:AddParagraph({
+    Title = "nothing here",
+    Content = "go back"
+})
+1Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/fly"))()
-            
+
   	end    
 })
+1Tab:AddButton({
+	Name = "Button2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))();
 
-OrionLib:MakeNotification({
-	Name = "Title!",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+  	end    
+})
+2Tab:AddSlider({
+	Name = "Slider",
+	Min = 18,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier",Value)
+	end    
+})
+2Tab:AddSlider({
+	Name = "Slider",
+	Min = 18,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character:SetAttribute("JumpPower",Value)
+	end    
 })
