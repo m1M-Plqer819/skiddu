@@ -4,13 +4,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "m1M", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local oneTab = Window:MakeTab({
-	Name = "Tab 1",
+	Name = "script",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local PlayerTab = Window:MakeTab({
-	Name = "Tab 2",
+	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -26,7 +26,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Button2",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))();
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))()
 
   	end    
 })
