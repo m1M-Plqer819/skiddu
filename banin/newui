@@ -1,153 +1,250 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-local Tab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--tabs
+local creditTabs = {
+    Main = Window:AddTab({ Title = "Credit", Icon = "clipboard" }),
+}
+local scriptTabs = {
+    Main = Window:AddTab({ Title = "gaf", Icon = "clipboard" }),
+    
+}
+local mimTabs = {
+    Main = Window:AddTab({ Title = "mine", Icon = "clipboard"})
+}
+local plTabs = {
+    Main = Window:AddTab({ Title = "Player", Icon = "clipboard"})
+}
+local miscTabs = {
+    Main = Window:AddTab({ Title = "Misc", Icon = "clipboard"})
+}
+--mentions
+creditTabs.Main:AddParagraph({
+    Title = "maybe",
+    Content = "SCRIPT MADE BY m1M \n ty for using"
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-local Section = Tab:AddSection({
-	Name = "Section"
+scriptTabs.Main:AddParagraph({
+    Title = "iiii",
+    Content = "discord.gg/ .\nclick to use any script"
 })
-
---[[
-Name = <string> - The name of the section.
-]]
-OrionLib:MakeNotification({
-	Name = "Title!",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+creditTabs.Main:AddParagraph({
+    Title = "https://dsc.gg/m1m-link",
+    Content = "JOIN MY DISCORD SERVER"
 })
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
+creditTabs.Main:AddParagraph({
+    Title = "https://bio.site/m1m",
+    Content = "MY bio"
 })
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddToggle({
-	Name = "This is a toggle!",
-	Default = false,
-	Callback = function(Value)
-		print(Value)
-	end    
+mimTabs.Main:AddParagraph({
+    Title = "another",
+    Content = "SCRIPT MADE BY m1M \n ty for using"
 })
-
---[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
-]]
-CoolToggle:Set(true)
-Tab:AddColorpicker({
-	Name = "Colorpicker",
-	Default = Color3.fromRGB(255, 0, 0),
-	Callback = function(Value)
-		print(Value)
-	end	  
+miscTabs.Main:AddParagraph({
+    Title = "nothing here",
+    Content = "go back"
 })
-
---[[
-Name = <string> - The name of the colorpicker.
-Default = <color3> - The default value of the colorpicker.
-Callback = <function> - The function of the colorpicker.
-]]
-ColorPicker:Set(Color3.fromRGB(255,255,255))
-Tab:AddSlider({
-	Name = "Slider",
-	Min = 0,
-	Max = 20,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "bananas",
-	Callback = function(Value)
-		print(Value)
-	end    
+creditTabs.Main:AddParagraph({
+    Title = "LeftCtrl",
+    Content = "to turn on off ui"
 })
-
---[[
-Name = <string> - The name of the slider.
-Min = <number> - The minimal value of the slider.
-Max = <number> - The maxium value of the slider.
-Increment = <number> - How much the slider will change value when dragging.
-Default = <number> - The default value of the slider.
-ValueName = <string> - The text after the value number.
-Callback = <function> - The function of the slider.
-]]
-Slider:Set(2)
-Tab:AddLabel("Label")
-CoolLabel:Set("Label New!")
-Tab:AddParagraph("Paragraph","Paragraph Content")
-CoolParagraph:Set("Paragraph New!", "New Paragraph Content!")
-Tab:AddTextbox({
-	Name = "Textbox",
-	Default = "default box input",
-	TextDisappear = true,
-	Callback = function(Value)
-		print(Value)
-	end	  
+creditTabs.Main:AddParagraph({
+    Title = "webhook",
+    Content = "https://discord.gg/8FdnnBkDaD"
 })
+--toggles
+--bf
+scriptTabs.Main:AddButton({
+    Title = "REDz Hub",
+    Description = "Key: No Key",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/redz/main/xhub/rp0d.lua"))()
 
---[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
-]]
-Tab:AddDropdown({
-	Name = "Dropdown",
-	Default = "1",
-	Options = {"1", "2"},
-	Callback = function(Value)
-		print(Value)
-	end    
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "MTriet Hub",
+    Description = "Key: No Key",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/mt/main/xhub/rp0d.lua"))()
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "FaiFao Hub",
+    Description = "Key: No Key",
+    Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/m1M-Plqer819/faifaov2/main/xhub/rp0d.lua")()
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "W-Azure v2",
+    Description = ".gg/w-azure",
+    Callback = function()
+        getgenv().Team = "Pirates"
+getgenv().FixCrash = false
+getgenv().FixCrash2 = false
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "Vector Hub",
+    Description = ".gg/jMgukPuVXD",
+    Callback = function()
+        _G.Mode = "English"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/vector/main/xhub/rp0d.lua"))()
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "HoHo Hub",
+    Description = ".gg/hohohub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/main/rp0d.lua'))()
+
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "Annie Hub",
+    Description = "Key: No Key",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/m1M-Plqer819/annie/main/hub/rpod.lua'))()
+
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "Xero Hub",
+    Description = "Key: No Key",
+    Callback = function()
+        getgenv().Team = "Marines" -- Pirates/Marines
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/xeroz"))()
+
+                    end
+                })
+scriptTabs.Main:AddButton({
+    Title = "master hub",
+    Description = "doraemon hub Key: No Key",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/masteryh'))()
+
+                    end
+                })
+--mim
+mimTabs.Main:AddButton({
+    Title = "skeid",
+    Description = "by m1M (troll)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/newbeta/loader.lua"))(); 
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "keyboard",
+    Description = "by red_bloxz",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Red_BloxZ/main/keyboard-script/M1m-reup.lua"))();
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "fumo kaitun",
+    Description = "cf by m1M (hohohub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/kaitunfv/rp0d.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (synergy hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/syn.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (w-azure hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/auy.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "auto bounty",
+    Description = "cf by m1M (not recommanded banana hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/bane.lua"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "collect fruit hop",
+    Description = "cf by m1M (hoho hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/fruitautohop"))()
+
+                    end
+                })
+mimTabs.Main:AddButton({
+    Title = "pvp gui",
+    Description = "cf by m1M (hoho hub)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hohohub/main/pvpgui"))()
+
+                    end
+                })
+--player
+local Slider = plTabs.Main:AddSlider("Slider", {
+    Title = "Player Speed",
+    Description = "change your speed",
+    Default = 2,
+    Min = 1,
+    Max = 100,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier",Value)
+    end
 })
-
---[[
-Name = <string> - The name of the dropdown.
-Default = <string> - The default value of the dropdown.
-Options = <table> - The options in the dropdown.
-Callback = <function> - The function of the dropdown.
-]]
-Dropdown:Refresh(List<table>,true)
-Dropdown:Set("dropdown option")
-OrionLib:Init()
-Tab1:AddToggle({
-    Name = "Toggle",
-    Default = true,
-    Save = true,
-    Flag = "toggle"
+local Slider = plTabs.Main:AddSlider("Slider", {
+    Title = "Jump Power",
+    Description = "change your height jump",
+    Default = 50,
+    Min = 50,
+    Max = 500,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character:SetAttribute("JumpPower",Value)
+    end
 })
+plTabs.Main:AddButton({
+    Title = "script fly",
+    Description = "fly",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/fly"))()
 
-print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
-OrionLib:Destroy()
+                    end
+                })
+plTabs.Main:AddButton({
+    Title = "aimbot",
+    Description = "aim bot",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/aimbot"))()
+
+                    end
+                })
+plTabs.Main:AddButton({
+    Title = "inf jump",
+    Description = "jump",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/infjump"))()
+
+                    end
+                })
+plTabs.Main:AddButton({
+    Title = "esp",
+    Description = "esp",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/esp"))()
+
+                    end
+                })
+--misc
