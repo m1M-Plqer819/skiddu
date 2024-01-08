@@ -15,11 +15,6 @@ local PlayerTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tabs.Main:AddParagraph({
-    Title = "nothing here",
-    Content = "go back"
-})
-
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
