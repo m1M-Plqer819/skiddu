@@ -24,7 +24,6 @@ local creditTabs = {
 }
 local scriptTabs = {
     Main = Window:AddTab({ Title = "gaf", Icon = "electricity" }),
-    
 }
 local mimTabs = {
     Main = Window:AddTab({ Title = "mine", Icon = "electricity"})
