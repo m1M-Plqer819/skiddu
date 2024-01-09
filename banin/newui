@@ -1,4 +1,4 @@
-function OrionLib:MakeWindow(WindowConfig)
+function OrionLib:AddWindow(WindowConfig)
 	local FirstTab = true
 	local Minimized = false
 	local Loaded = false
