@@ -9,7 +9,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/m
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/david1/main/main/internet.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "minh " .. https://dsc.gg/m1m-link,
+    Title = "minh " .. Fluent.Version,
     SubTitle = "by m1M",
     Keybind = "LeftControl",
     TabWidth = 130,
