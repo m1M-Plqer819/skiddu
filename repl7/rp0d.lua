@@ -172,7 +172,7 @@ scriptTabs.Main:AddButton({
     Title = "test",
     Description = "macu",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/CreamSoScute/main/LoadNormal.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 
                     end
                 })
