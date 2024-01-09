@@ -24,6 +24,7 @@ local creditTabs = {
 }
 local scriptTabs = {
     Main = Window:AddTab({ Title = "gaf", Icon = "electricity" }),
+    
 }
 local mimTabs = {
     Main = Window:AddTab({ Title = "mine", Icon = "electricity"})
@@ -106,6 +107,7 @@ scriptTabs.Main:AddButton({
     Description = "Key: No Key",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/mt/main/xhub/rp0d.lua"))()
+
                     end
                 })
 scriptTabs.Main:AddButton({
@@ -113,6 +115,7 @@ scriptTabs.Main:AddButton({
     Description = "Key: No Key",
     Callback = function()
         loadstring(game:HttpGet"https://raw.githubusercontent.com/m1M-Plqer819/faifaov2/main/xhub/rp0d.lua")()
+
                     end
                 })
 scriptTabs.Main:AddButton({
@@ -132,6 +135,7 @@ scriptTabs.Main:AddButton({
     Callback = function()
         _G.Mode = "English"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/vector/main/xhub/rp0d.lua"))()
+
                     end
                 })
 scriptTabs.Main:AddButton({
@@ -164,14 +168,6 @@ scriptTabs.Main:AddButton({
     Description = "Key: No Key",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/zeckrom"))()
-
-                    end
-                })
-scriptTabs.Main:AddButton({
-    Title = "test",
-    Description = "macu",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 
                     end
                 })
