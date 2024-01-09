@@ -1,12 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "totorial hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local Tab = Player:MakeTab({
-	Name = "local player",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 local Tab = Scripts:MakeTab({
 	Name = "hub",
 	Icon = "rbxassetid://4483345998",
@@ -22,19 +16,6 @@ ScriptsTab:AddButton({
 
 CoolToggle:Set(true)
 
-PlayerTab:AddSlider({
-	Name = "speed",
-	Min = 18,
-	Max = 500,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "speed",
-	Callback = function(Value)
-		print(Value)
-	end    
-})
-
 OrionLib:MakeNotification({
 	Name = "Player",
 	Content = "Notification content... what will it say??",
@@ -42,6 +23,6 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-local Section = Tab:AddSection({
+local Section = ScriptsTab:AddSection({
 	Name = "Player"
 })
