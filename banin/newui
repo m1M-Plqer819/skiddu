@@ -13,16 +13,3 @@ ScriptsTab:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))()
   	end    
 })
-
-CoolToggle:Set(true)
-
-OrionLib:MakeNotification({
-	Name = "Player",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-local Section = ScriptsTab:AddSection({
-	Name = "Player"
-})
