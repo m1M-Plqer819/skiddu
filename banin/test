@@ -1,4 +1,3 @@
-repeat wait() until game:IsLoaded();
 if _G.Mode == "Bounty" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/banin/pgab",true))()
 else
