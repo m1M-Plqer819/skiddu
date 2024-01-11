@@ -2,14 +2,14 @@ repeat wait() until game:IsLoaded();
 if game.PlaceId==2753915549 or game.PlaceId==8737899170 or game.PlaceId==155382109 or game.PlaceId==8737602449 or game.PlaceId==13333567382 or game.PlaceId==15002061926 or game.PlaceId==13772394625 or game.PlaceId==7041939546 then 
     if _G.Mode == "bounty" then 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/banin/pgab"))()
-    else if _G.Mode_Version == "v2" then 
+    elseif _G.Mode_Version == "v2" then 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/vt"))()
-    else if _G.Mode_Version == "v1" then 
+    elseif _G.Mode_Version == "v1" then 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/vo"))()
     else 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/rp0d.lua",true))()
     end 
-else if game.PlaceId==13710713070 or game.PlaceId==13213667041 then 
+elseif game.PlaceId==13710713070 or game.PlaceId==13213667041 then 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/repl7/rp0d.lua",true))()
 else game.Players.LocalPlayer:Kick("not support")
     wait(3)game:Shutdown()
