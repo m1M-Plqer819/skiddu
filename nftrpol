@@ -6,10 +6,3 @@ local scriptTab = Window:MakeTab({
 	Icon = "rbxassetid://7743869054",
 	PremiumOnly = false
 })
-
-scriptTab:AddButton({
-	Name = "minh",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))();
-  	end    
-})
