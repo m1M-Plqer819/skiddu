@@ -2,15 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local mainTab = Window:MakeTab({
-	Name = "Tab 1",
+	Name = "your mom is fat",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-
-mainTab:AddButton({
-	Name = "minh",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))()
-
-  	end    
 })
