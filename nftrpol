@@ -1,0 +1,31 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "minh hub 🤡", HidePremium = false, SaveConfig = true, Introtext = "m1m", ConfigFolder = "OrionTest"})
+
+local scriptTab = Window:MakeTab({
+	Name = "main",
+	Icon = "rbxassetid://7743869054",
+	PremiumOnly = false
+})
+
+local knTab = Window:MakeTab({
+	Name = "kaitun",
+	Icon = "rbxassetid://7734042580",
+	PremiumOnly = false
+})
+
+local plTab = Window:MakeTab({
+	Name = "player",
+	Icon = "rbxassetid://7733955740",
+	PremiumOnly = false
+})
+
+scriptTab:AddButton({
+	Name = "minh",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))();
+  	end    
+})
+
+end
+OrionLib:Init()
