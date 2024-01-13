@@ -7,11 +7,4 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddTextbox({
-	Name = "Textbox",
-	Default = "default box input",
-	TextDisappear = true,
-	Callback = function(Value)
-		dsc.gg/m1m-link
-	end	  
-})
+Tab:AddParagraph("discord.gg/roblox","memaybeo")
