@@ -10,6 +10,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))();
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/skdpo.lua"))()
+
   	end    
 })
