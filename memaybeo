@@ -13021,14 +13021,12 @@ function activatefly()
 	start()
 end
 
-Py:Button("Fly",_G.Setting_table.Fly,function(vu)
-	Fly = vu
-	_G.Setting_table.Fly = vu
-	Update_Setting(getgenv()['MyName'])
-	if vu then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/flygui"))()
-	end
-end)
+Py:Button({
+	Name = "fly gui",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/flygui"))()
+  	end    
+})
 
 Py:Seperator("Miscpvp")
 
