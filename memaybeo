@@ -4749,7 +4749,7 @@ local LogoToggle = Instance.new("ImageLabel")
 end
 
 
-local Library = Update:Window("mbm hub","2.0",Enum.KeyCode.RightControl);
+local Library = Update:Window("mbm","2.0",Enum.KeyCode.RightControl);
 
 Main = Library:Tab("Genneral",15582682098)
 Sta = Library:Tab("Stats",15582682098)
