@@ -3838,10 +3838,10 @@ function Update:Window(text,logo,keybind)
 	Hubb.Parent = Top
 	Hubb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Hubb.BackgroundTransparency = 1.000
-	Hubb.Position = UDim2.new(0, 420, 0, 0)
+	Hubb.Position = UDim2.new(0, 360, 0, 0)
 	Hubb.Size = UDim2.new(0, 81, 0, 27)
 	Hubb.Font = Enum.Font.GothamSemibold
-	Hubb.Text = "fv | https://dsc.gg/m1m-link"
+	Hubb.Text = "BETA | fv | https://dsc.gg/m1m-link"
 	Hubb.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hubb.TextSize = 17.000
 	Hubb.TextXAlignment = Enum.TextXAlignment.Left
