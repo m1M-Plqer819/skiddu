@@ -3018,7 +3018,7 @@ end
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Hop Low Server ", 
 				Text = "กำลังหาเซิฟ",
-				Icon = "http://www.roblox.com/asset/?id=9606070311",
+				Icon = "http://www.roblox.com/asset/?id=15582682098",
 				Duration = 25
 			})
 			local PlaceID = game.PlaceId
@@ -3348,7 +3348,7 @@ end
     
     function Text(value)
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "m1m Notification", 
+			Title = "dsc Notification", 
 			Text = tostring(value),
 			Icon = "http://www.roblox.com/asset/?id=15582682098",
 			Duration = 10
@@ -3738,7 +3738,7 @@ function Update:Window(text,logo,keybind)
 	local logo = logo or 0
 	local currentpage = ""
 	local keybind = keybind or Enum.KeyCode.RightControl
-	local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.LeftControl","LeftControl")
+	local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.RightControl","RightControl")
 	
 	local SOMEXHUB = Instance.new("ScreenGui")
 	SOMEXHUB.Name = "SOMEXHUB"
@@ -3838,10 +3838,10 @@ function Update:Window(text,logo,keybind)
 	Hubb.Parent = Top
 	Hubb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Hubb.BackgroundTransparency = 1.000
-	Hubb.Position = UDim2.new(0, 480, 0, 0)
+	Hubb.Position = UDim2.new(0, 420, 0, 0)
 	Hubb.Size = UDim2.new(0, 81, 0, 27)
 	Hubb.Font = Enum.Font.GothamSemibold
-	Hubb.Text = "Version | https://dsc.gg/m1m-link"
+	Hubb.Text = "fv | https://dsc.gg/m1m-link"
 	Hubb.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hubb.TextSize = 17.000
 	Hubb.TextXAlignment = Enum.TextXAlignment.Left
@@ -3861,7 +3861,7 @@ local LogoHub = Instance.new("ImageLabel")
 	LogoHub.BackgroundTransparency = 1.000
 	LogoHub.Position = UDim2.new(0, 0, 0, 1)
 	LogoHub.Size = UDim2.new(0, 150, 0, 150)
-	LogoHub.Image = "http://www.roblox.com/asset/?id=15582682098"..tostring(14395120725)
+	LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(15582682098)
 
 	local ScrollTab = Instance.new("ScrollingFrame")
 	ScrollTab.Name = "ScrollTab"
@@ -4171,7 +4171,7 @@ local LogoToggle = Instance.new("ImageLabel")
 	LogoToggle.BackgroundTransparency = 1.000
 	LogoToggle.Position = UDim2.new(0, 7, 0, 2)
 	LogoToggle.Size = UDim2.new(0, 26, 0, 26)
-	LogoToggle.Image = "http://www.roblox.com/asset/?id=15582682098"..tostring(14395120725)
+	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(15582682098)
 
 			Circle.Name = "Circle"
 			Circle.Parent = ToggleImage
@@ -4749,16 +4749,16 @@ local LogoToggle = Instance.new("ImageLabel")
 end
 
 
-local Library = Update:Window("skid","1.0",Enum.KeyCode.LeftControl);
+local Library = Update:Window("Makori","2.0",Enum.KeyCode.RightControl);
 
-Main = Library:Tab("Genneral",6026568198)
-Sta = Library:Tab("Stats",7040410130)
-Miscf = Library:Tab("MiscFarm",9606626859)
-Sho = Library:Tab("Fruit",7044233235)
-Shop = Library:Tab("Shop",9606625251)
-Raid = Library:Tab("Raid",9606629300)
-TPKub = Library:Tab("Teleport",9606628205)
-Py = Library:Tab("Players",9606626034)
+Main = Library:Tab("Genneral",15582682098)
+Sta = Library:Tab("Stats",15582682098)
+Miscf = Library:Tab("MiscFarm",15582682098)
+Sho = Library:Tab("Fruit",15582682098)
+Shop = Library:Tab("Shop",15582682098)
+Raid = Library:Tab("Raid",15582682098)
+TPKub = Library:Tab("Teleport",15582682098)
+Py = Library:Tab("Players",15582682098)
 
 
 
@@ -5467,7 +5467,7 @@ Code = {
         "XMASEXP",
         "1BILLION",
         "ShutDownFix2",
-        "TheGreatAce",
+        "UPD14",
         "STRAWHATMAINE",
         "TantaiGaming",
         "Colosseum",
@@ -6005,7 +6005,7 @@ end)
 											game.StarterGui:SetCore("SendNotification", {
 												Title = "Hop Low Server ", 
 												Text = "กำลังหาเซิฟ",
-												Icon = "http://www.roblox.com/asset/?id=9606070311",
+												Icon = "http://www.roblox.com/asset/?id=15582682098",
 												Duration = 25
 											})
 											local PlaceID = game.PlaceId
@@ -6031,7 +6031,7 @@ end)
 													game.StarterGui:SetCore("SendNotification", {
 														Title = "Hop Low Server ", 
 														Text = "Players : " ..tonumber(v.playing),
-														Icon = "http://www.roblox.com/asset/?id=9606070311",
+														Icon = "http://www.roblox.com/asset/?id=15582682098",
 														Duration = 1.5
 													})
 													if tonumber(v.maxPlayers) > tonumber(v.playing) then
@@ -6095,7 +6095,7 @@ end)
 										game.StarterGui:SetCore("SendNotification", {
 											Title = "Hop Low Server ", 
 											Text = "กำลังหาเซิฟ",
-											Icon = "http://www.roblox.com/asset/?id=9606070311",
+											Icon = "http://www.roblox.com/asset/?id=15582682098",
 											Duration = 25
 										})
 										local PlaceID = game.PlaceId
@@ -6121,7 +6121,7 @@ end)
 												game.StarterGui:SetCore("SendNotification", {
 													Title = "Hop Low Server ", 
 													Text = "Players : " ..tonumber(v.playing),
-													Icon = "http://www.roblox.com/asset/?id=9606070311",
+													Icon = "http://www.roblox.com/asset/?id=15582682098",
 													Duration = 1.5
 												})
 												if tonumber(v.maxPlayers) > tonumber(v.playing) then
@@ -6735,7 +6735,7 @@ spawn(function()
         while wait() do
             if AutoFindFullmoon then
                 pcall(function()
-                    if not game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+                    if not game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=15582682098" then
                         wait(3)
                         HopServer()
                     end
@@ -7831,7 +7831,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Superhuman" ,
-							Icon = "http://www.roblox.com/asset/?id=",
+							Icon = "http://www.roblox.com/asset/?id=15582682098",
 							Duration = 2.5
 						})
 					end
@@ -7843,7 +7843,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Death Step" ,
-							Icon = "http://www.roblox.com/asset/?id=",
+							Icon = "http://www.roblox.com/asset/?id=15582682098",
 							Duration = 2.5
 						})
 					end
@@ -7855,7 +7855,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have SharkMan Karate" ,
-							Icon = "http://www.roblox.com/asset/?id=",
+							Icon = "http://www.roblox.com/asset/?id=15582682098",
 							Duration = 2.5
 						})
 					end
@@ -7867,7 +7867,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Electric Claw" ,
-							Icon = "http://www.roblox.com/asset/?id=",
+							Icon = "http://www.roblox.com/asset/?id=15582682098",
 							Duration = 2.5
 						})
 					end
@@ -7877,7 +7877,7 @@ spawn(function()
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Notification", 
 									Text = "Not Have Enough Material" ,
-									Icon = "http://www.roblox.com/asset/?id=",
+									Icon = "http://www.roblox.com/asset/?id=15582682098",
 									Duration = 2.5
 								})
 							else
@@ -7888,7 +7888,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Dragon Talon" ,
-							Icon = "http://www.roblox.com/asset/?id=",
+							Icon = "http://www.roblox.com/asset/?id=15582682098",
 							Duration = 2.5
 						})
 					end
@@ -12046,7 +12046,7 @@ spawn(function()
 							Mix_Farm = nil
 							_G.Stop_Tween = nil
 							Auto_Raid_Farm = nil
-							Library:Notify("https://dsc.gg/m1m-link")
+							Library:Notify("ไม่มีผลปีศาจเหลือแล้ว")
 						end
 					end
 				elseif game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == true then
@@ -13021,13 +13021,19 @@ function activatefly()
 	start()
 end
 
-Py:Button("Fly",_G.Setting_table.Fly,function(vu)
+Py:Toggle("Fly",_G.Setting_table.Fly,function(vu)
 	Fly = vu
 	_G.Setting_table.Fly = vu
 	Update_Setting(getgenv()['MyName'])
 	if vu then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/flygui"))()
+		activatefly()
 	end
+end)
+
+Py:Slider("Speed ",1,50,16,function(vu)
+	speedSET = vu
+	_G.Setting_table.Speed = vu
+	Update_Setting(getgenv()['MyName'])
 end)
 
 Py:Seperator("Miscpvp")
@@ -13339,6 +13345,21 @@ Py:Seperator("Server")
         end
     end)
     
+    Py:Button("Open Devil Shop",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
+        game:GetService("Players").LocalPlayer.PlayerGui.Main.FruitShop.Visible = true
+    end)
+    
+    Py:Button("Open Inventory",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")
+        wait(1)
+        game:GetService("Players").LocalPlayer.PlayerGui.Main.Inventory.Visible = true
+    end)
+    
+    Py:Button("Open Inventory Fruit",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryFruits")
+        game:GetService("Players").LocalPlayer.PlayerGui.Main.FruitInventory.Visible = true
+    end)
     
     Py:Button("Title Name",function()
     local args = {
@@ -13514,7 +13535,7 @@ end)
         end
     end
 
-Main:Label("skid hub by minh")
+Main:Label("any hub made by m.1.M in discord")
 
 
 
