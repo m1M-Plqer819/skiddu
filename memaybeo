@@ -3838,10 +3838,10 @@ function Update:Window(text,logo,keybind)
 	Hubb.Parent = Top
 	Hubb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Hubb.BackgroundTransparency = 1.000
-	Hubb.Position = UDim2.new(0, 420, 0, 0)
+	Hubb.Position = UDim2.new(0, 480, 0, 0)
 	Hubb.Size = UDim2.new(0, 81, 0, 27)
 	Hubb.Font = Enum.Font.GothamSemibold
-	Hubb.Text = "v1.3 | https://dsc.gg/m1m-link"
+	Hubb.Text = "Version | https://dsc.gg/m1m-link"
 	Hubb.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hubb.TextSize = 17.000
 	Hubb.TextXAlignment = Enum.TextXAlignment.Left
@@ -5467,7 +5467,7 @@ Code = {
         "XMASEXP",
         "1BILLION",
         "ShutDownFix2",
-        "UPD14",
+        "TheGreatAce",
         "STRAWHATMAINE",
         "TantaiGaming",
         "Colosseum",
@@ -12046,7 +12046,7 @@ spawn(function()
 							Mix_Farm = nil
 							_G.Stop_Tween = nil
 							Auto_Raid_Farm = nil
-							Library:Notify("what!?")
+							Library:Notify("https://dsc.gg/m1m-link")
 						end
 					end
 				elseif game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == true then
@@ -13021,19 +13021,13 @@ function activatefly()
 	start()
 end
 
-Py:Toggle("Fly",_G.Setting_table.Fly,function(vu)
+Py:Button("Fly",_G.Setting_table.Fly,function(vu)
 	Fly = vu
 	_G.Setting_table.Fly = vu
 	Update_Setting(getgenv()['MyName'])
 	if vu then
-		activatefly()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/Skeyuirb/main/flygui"))()
 	end
-end)
-
-Py:Slider("Speed ",1,50,16,function(vu)
-	speedSET = vu
-	_G.Setting_table.Speed = vu
-	Update_Setting(getgenv()['MyName'])
 end)
 
 Py:Seperator("Miscpvp")
