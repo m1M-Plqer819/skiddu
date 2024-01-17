@@ -4749,7 +4749,7 @@ local LogoToggle = Instance.new("ImageLabel")
 end
 
 
-local Library = Update:Window("Makori","2.0",Enum.KeyCode.RightControl);
+local Library = Update:Window("mbm hub","2.0",Enum.KeyCode.RightControl);
 
 Main = Library:Tab("Genneral",15582682098)
 Sta = Library:Tab("Stats",15582682098)
@@ -5354,24 +5354,6 @@ spawn(function()
     end)
 end)
 
-Main:Toggle(" Remove Sound ",_G.Setting_table.Refec,function(vu)
-	RemoveHit = vu
-	_G.Setting_table.RemoveHit = vu
-	Update_Setting(getgenv()['MyName'])
-end)
-
-spawn(function()
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if RemoveHit == true then
-            game:GetService("ReplicatedStorage").Effect.Container.LevelUp:Destroy()
-            game:GetService("ReplicatedStorage").Util.Sound:Destroy()
-            game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy"):Destroy()
-            game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp"):Destroy()
-            game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()        
-        end
-    end)
-end)
-    
 Main:Toggle(" Auto Buso ",_G.Setting_table.Auto_Buso,function(vu)
 	Auto_Buso = vu
 	_G.Setting_table.Auto_Buso = vu
@@ -13535,7 +13517,7 @@ end)
         end
     end
 
-Main:Label("any hub made by m.1.M in discord")
+Main:Label("mbm & m1m hub made by m.1.M in discord")
 
 
 
