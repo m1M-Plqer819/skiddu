@@ -1,58 +1,43 @@
--- made by Aethiel
- 
-local teamCheck = true
-local fov = 150
-local smoothing = 0.5
- 
-local RunService = game:GetService("RunService")
- 
-local FOVring = Drawing.new("Circle")
-FOVring.Visible = true
-FOVring.Thickness = 2
-FOVring.Radius = fov
-FOVring.Transparency = 1
-FOVring.Color = Color3.fromRGB(255, 128, 128)
-FOVring.Position = workspace.CurrentCamera.ViewportSize/2
- 
-local function getClosest(cframe)
-   local ray = Ray.new(cframe.Position, cframe.LookVector).Unit
- 
-   local target = nil
-   local mag = math.huge
- 
-   for i,v in pairs(game.Players:GetPlayers()) do
-       if v.Character and v.Character:FindFirstChild("Head") and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= game.Players.LocalPlayer and (v.Team ~= game.Players.LocalPlayer.Team or (not teamCheck)) then
-           local magBuf = (v.Character.Head.Position - ray:ClosestPoint(v.Character.Head.Position)).Magnitude
- 
-           if magBuf < mag then
-               mag = magBuf
-               target = v
-           end
-       end
-   end
- 
-   return target
+local localPlayer = game:GetService("Players").LocalPlayer
+
+local function player()
+    local target = nil
+    local dist = math.huge
+    
+    for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+        if v.Name ~= localPlayer.Name then
+            if v.Character and v.Character:FindFirstChild("Head") and v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Head") and v.TeamColor ~= localPlayer.TeamColor then
+                local magnitude = (v.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+
+                if magnitude < dist then
+                    target = v
+                    dist = magnitude
+                end
+        end
+    end
+    
+    return target
 end
- 
-loop = RunService.RenderStepped:Connect(function()
-   local UserInputService = game:GetService("UserInputService")
-   local pressed = --[[UserInputService:IsKeyDown(Enum.KeyCode.E)]] UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2)
-   local localPlay = game.Players.localPlayer.Character
-   local cam = workspace.CurrentCamera
-   local zz = workspace.CurrentCamera.ViewportSize/2
- 
-   if pressed then
-       local Line = Drawing.new("Line")
-       local curTar = getClosest(cam.CFrame)
-       local ssHeadPoint = cam:WorldToScreenPoint(curTar.Character.Head.Position)
-       ssHeadPoint = Vector2.new(ssHeadPoint.X, ssHeadPoint.Y)
-       if (ssHeadPoint - zz).Magnitude < fov then
-           workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame:Lerp(CFrame.new(cam.CFrame.Position, curTar.Character.Head.Position), smoothing)
-       end
-   end
- 
-   if UserInputService:IsKeyDown(Enum.KeyCode.P) then
-       loop:Disconnect()
-       FOVring:Remove()
-   end
+
+
+local camera = game.Workspace.CurrentCamera
+local UIS = game:GetService("UserInputService")
+local aim = false
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    if aim then
+        camera.CFrame = CFrame.new(camera.CFrame.Position,player().Character.Head.Position)
+    end
+end)
+
+UIS.InputBegan:Connect(function(inp)
+    if inp.UserInputType == Enum.UserInputType.MouseButton2 then
+        aim = true
+    end
+end)
+
+UIS.InputEnded:Connect(function(inp)
+    if inp.UserInputType == Enum.UserInputType.MouseButton2 then
+        aim = false
+    end
 end)
