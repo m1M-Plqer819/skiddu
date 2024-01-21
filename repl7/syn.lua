@@ -1,6 +1,6 @@
 _G.Team = "Pirates"
 
-_G.FpsBoost = true
+_G.FpsBoost = false
 
 _G.Webhook = "https://discord.com/api/webhooks/1187340197927604254/OZMxPvP2-EQxMGnLvs6RyegvfIiKXFK5DWUXPZ_f_IIkGLOmUqdTJU9c2Cd_qnP3qNLS"
 
@@ -149,3 +149,17 @@ _G.Setting = {
 repeat wait() until game:IsLoaded()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/banin/synn"))()
+
+_G.Remove_Effect = true
+
+spawn(function()
+    game:GetService('RunService').Stepped:Connect(function()
+        if _G.Remove_Effect then
+            for i, v in pairs(game:GetService("ReplicatedStorage").Effect.Container:GetChildren()) do
+                if v.Name == "Death" then
+                    v:Destroy() 
+                end
+            end
+        end
+    end)
+    end)
