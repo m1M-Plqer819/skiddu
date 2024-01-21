@@ -148,4 +148,4 @@ _G.Setting = {
 
 repeat wait() until game:IsLoaded()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/clgtmm/AutoBounty/main/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/banin/synn"))()
