@@ -6,13 +6,6 @@
 	repeat wait() until game:GetService("Players").LocalPlayer.PlayerGui
 	repeat wait() until game:GetService("ReplicatedStorage").Effect.Container
 
-        print("made by minh hub)
-        print("mbm x hub)
-        print("join my discord server : https://dsc.gg/m1m-link)
-        print("bio : https://bio.site/m1m)
-        print("ty for using - have fun)
-
-
 	if not game:IsLoaded() then
 		local GameLoadGui = Instance.new("Message",workspace);
 		GameLoadGui.Text = 'Wait Game Loading';
