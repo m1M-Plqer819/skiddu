@@ -54,12 +54,6 @@
 		until join == true and game.Players.LocalPlayer.Team ~= nil and game:IsLoaded() 
 	end
 
-        print("made by minh hub)
-        print("mbm x hub)
-        print("join my discord server : https://dsc.gg/m1m-link)
-        print("bio : https://bio.site/m1m)
-        print("ty for using - have fun)
-
 	Old_World = false
 	New_World = false
 	Three_World = false
@@ -13640,3 +13634,9 @@ task.delay(25 * 60,function() -- hop every 25 min
    
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hop/main/server/every"))()
 end)
+
+print("made by minh hub)
+print("mbm x hub)
+print("join my discord server : https://dsc.gg/m1m-link)
+print("bio : https://bio.site/m1m)
+print("ty for using - have fun)
