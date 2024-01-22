@@ -1,5 +1,12 @@
 
 
+
+print("made by minh hub)
+print("mbm x hub)
+print("join my discord server : https://dsc.gg/m1m-link)
+print("bio : https://bio.site/m1m)
+print("ty for using - have fun)
+
 	repeat wait() until game:IsLoaded()
 	repeat wait() until game:GetService("Players")
 	repeat wait() until game:GetService("Players").LocalPlayer
@@ -13629,12 +13636,6 @@ task.spawn(function()
 		end)
 	end
 end) 
-
-print("made by minh hub)
-print("mbm x hub)
-print("join my discord server : https://dsc.gg/m1m-link)
-print("bio : https://bio.site/m1m)
-print("ty for using - have fun)
 
 task.delay(25 * 60,function() -- hop every 25 min
    
