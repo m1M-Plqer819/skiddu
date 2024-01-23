@@ -151,9 +151,6 @@ autoparry:OnChanged(function(toggled)
 												if Hit <= 0.5 then
 													game:GetService("ReplicatedStorage").Remotes.ParryButtonPress:Fire()
 											if mbmhub.telepball then
-											    Callback = function()
-											            loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/beta.lua"))()
-
 												end
 											end
 										end
@@ -170,6 +167,14 @@ autoparry:OnChanged(function(toggled)
 	end
 end)
 Tabs.Main:AddSection("Crates")
+Tabs.Main:AddButton({
+    Title = "tele ball auto parry (beta)",
+    Description = "can't stop",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/beta.lua"))()
+
+                    end
+                })
 local autoexplosion = Tabs.Main:AddToggle("autoexplosion", {Title = "Auto Open Explosion Crate", Default = false })
 autoexplosion:OnChanged(function(toggled)
 	if toggled then
