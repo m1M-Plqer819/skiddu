@@ -22,7 +22,7 @@ local Window = Fluent:CreateWindow({
 	TabWidth = 160,
 	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
-	Theme = "Dark",
+	Theme = "Rose",
 	MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
@@ -150,6 +150,10 @@ autoparry:OnChanged(function(toggled)
 											if not isindontkill(target) then
 												if Hit <= 0.5 then
 													game:GetService("ReplicatedStorage").Remotes.ParryButtonPress:Fire()
+											if mbmhub.telepball then
+											    Callback = function()
+											            loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/beta.lua"))()
+
 												end
 											end
 										end
@@ -289,7 +293,7 @@ Tabs.farmsettings:AddButton({
 	end
 })
 Tabs.farmsettings:AddSection("Auto Parry Settings")
-local stayundergroundtoggle = Tabs.farmsettings:AddToggle("stayunderground", {Title = "Stay Underground", Default = true })
+local stayundergroundtoggle = Tabs.farmsettings:AddToggle("stayunderground", {Title = "Stay Underground", Default = false })
 stayundergroundtoggle:OnChanged(function(toggled)
 	if toggled then
 		mbmhub.stayunderground = true
@@ -297,12 +301,20 @@ stayundergroundtoggle:OnChanged(function(toggled)
 		mbmhub.stayunderground = false
 	end
 end)
-local legitap = Tabs.farmsettings:AddToggle("legitmode", {Title = "Legit Auto Parry Mode", Default = false })
+local legitap = Tabs.farmsettings:AddToggle("legitmode", {Title = "Legit Auto Parry Mode", Default = true })
 legitap:OnChanged(function(toggled)
 	if toggled then
 		mbmhub.legitautoparry = true
 	else
 		mbmhub.legitautoparry = false
+	end
+end)
+local teleball = Tabs.farmsettings:AddToggle("tpballs", {Title = "tele ball", Default = false })
+teleball:OnChanged(function(toggled)
+	if toggled then
+		mbmhub.telepball = true
+	else
+		mbmhub.telepball = false
 	end
 end)
 
