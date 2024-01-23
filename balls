@@ -1,17 +1,26 @@
 --[[
+    script made my minh - or call me by the name you like
+    18/10/2018/ ? VN
 
-here would be the whitelist stuff
-
+    bio : https://bio.site/m1m - my server : https://dsc.gg/m1m-link
+    mbm x hub - blox fruits
 --]]
+
+        print("made by minh hub")
+        print("mbm x hub")
+        print("join my discord server : https://dsc.gg/m1m-link")
+        print("bio : https://bio.site/m1m")
+        print("ty for using - have fun")
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-	Title = "Ruby Hub",
-	SubTitle = "by Deni210",
+	Title = "mbm Hub",
+	SubTitle = "by Player.81 on discord (https://dsc.gg/m1m-link)",
 	TabWidth = 160,
-	Size = UDim2.fromOffset(580, 460),
+	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
 	Theme = "Dark",
 	MinimizeKey = Enum.KeyCode.LeftControl
@@ -21,7 +30,7 @@ local Tabs = {
 	farmsettings = Window:AddTab({ Title = "Farming Settings", Icon = "rbxassetid://14521909814" }),
 	Settings = Window:AddTab({ Title = "UI Settings", Icon = "settings" })
 }
-local rubyhub = {
+local mbmhub = {
 	autoparrying = false,
 	stayunderground = true,
 	legitautoparry = false,
@@ -55,7 +64,7 @@ end
 function isindontkill(player)
 	local dontkillname = player.Name
 	local dontkill = false
-	for i, v in pairs(rubyhub.dontkillonstandoff) do
+	for i, v in pairs(mbmhub.dontkillonstandoff) do
 		if v == dontkillname then
 			dontkill = true
 		end
@@ -65,24 +74,24 @@ end
 
 local Options = Fluent.Options
 
-notify("Thanks for using Ruby Hub!")
-notify("Inspired by Amir (wer denn sunst)")
+notify("Thanks for using mbm Hub!")
+notify("wdym")
 
 Tabs.Main:AddSection("Main")
 local autoparry = Tabs.Main:AddToggle("autoparry", {Title = "Auto Parry", Default = false })
 autoparry:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.autoparrying = true
+		mbmhub.autoparrying = true
 		while toggled and task.wait() do
-			if rubyhub.autoparrying then
+			if mbmhub.autoparrying then
 				if islpalive() then
 					if #game.Players:GetPlayers() >= 4 then
 						for i, ball in next, workspace.Balls:GetChildren() do
 							if ball then
 								if game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-									if not rubyhub.legitautoparry then
+									if not mbmhub.legitautoparry then
 										if ball.Color == Color3.fromRGB(255, 0, 4) then
-											if rubyhub.stayunderground then
+											if mbmhub.stayunderground then
 												if timer < 100 then
 													game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = ball.CFrame * CFrame.new(3, -10.6343, (ball.Velocity).Magnitude * -0.5)
 												elseif timer > 100 and timer < 200 then
@@ -92,7 +101,7 @@ autoparry:OnChanged(function(toggled)
 												end
 											end
 										else
-											if rubyhub.stayunderground then
+											if mbmhub.stayunderground then
 												game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(ball.Position.X, -16.6343, ball.Position.z)
 											else
 												game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(ball.Position.X, ball.Position.y + 5, ball.Position.z)
@@ -153,24 +162,24 @@ autoparry:OnChanged(function(toggled)
 			end
 		end
 	else
-		rubyhub.autoparrying = false
+		mbmhub.autoparrying = false
 	end
 end)
 Tabs.Main:AddSection("Crates")
 local autoexplosion = Tabs.Main:AddToggle("autoexplosion", {Title = "Auto Open Explosion Crate", Default = false })
 autoexplosion:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.openexplosion = true
+		mbmhub.openexplosion = true
 	else
-		rubyhub.openexplosion = false
+		mbmhub.openexplosion = false
 	end
 end)
 local autosword = Tabs.Main:AddToggle("autosword", {Title = "Auto Open Sword Crate", Default = false })
 autosword:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.opensword = true
+		mbmhub.opensword = true
 	else
-		rubyhub.opensword = false
+		mbmhub.opensword = false
 	end
 end)
 
@@ -178,42 +187,42 @@ Tabs.Main:AddSection("Automation")
 local autovoteffa = Tabs.Main:AddToggle("autovoteffa", {Title = "Auto Vote for FFA", Default = false })
 autovoteffa:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.selectffa = true
+		mbmhub.selectffa = true
 	else
-		rubyhub.selectffa = false
+		mbmhub.selectffa = false
 	end
 end)
 local autovote2t = Tabs.Main:AddToggle("autovote2t", {Title = "Auto Vote for 2 Teams", Default = false })
 autovoteffa:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.select2v2 = true
+		mbmhub.select2v2 = true
 	else
-		rubyhub.select2v2 = false
+		mbmhub.select2v2 = false
 	end
 end)
 local autovote4t = Tabs.Main:AddToggle("autovote4t", {Title = "Auto Vote for 4 Teams", Default = false })
 autovote4t:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.select4v4 = true
+		mbmhub.select4v4 = true
 	else
-		rubyhub.select4v4 = false
+		mbmhub.select4v4 = false
 	end
 end)
 local autospin = Tabs.Main:AddToggle("autospin", {Title = "Auto Spin", Default = false })
 autospin:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.autospin = true
+		mbmhub.autospin = true
 	else
-		rubyhub.autospin = false
+		mbmhub.autospin = false
 	end
 end)
 Tabs.Main:AddSection("Cooldown")
 local skipcasec = Tabs.Main:AddToggle("skipcasec", {Title = "Disable Case Cooldown", Default = false })
 skipcasec:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.skipcasecooldown = true
+		mbmhub.skipcasecooldown = true
 	else
-		rubyhub.skipcasecooldown = false
+		mbmhub.skipcasecooldown = false
 	end
 end)
 Tabs.Main:AddSection("Codes")
@@ -245,7 +254,7 @@ local whitelistplayer = Tabs.farmsettings:AddInput("whitelistplayer", {
 	Callback = function(playername)
 		for i, v in pairs(game.Players:GetPlayers()) do
 			if string.find(v.Name:lower(), playername:lower()) or string.find(v.DisplayName:lower(), playername:lower()) then
-				table.insert(rubyhub.dontkillonstandoff, v.Name)
+				table.insert(mbmhub.dontkillonstandoff, v.Name)
 			end
 		end
 	end
@@ -260,13 +269,13 @@ local unwhitelistplayer = Tabs.farmsettings:AddInput("unwhitelist", {
 		for i, v in pairs(game.Players:GetPlayers()) do
 			if string.find(v.Name:lower(), playername:lower()) or string.find(v.DisplayName:lower(), playername:lower()) then
 				local newtable = {}
-				for a, b in pairs(rubyhub.dontkillonstandoff) do
+				for a, b in pairs(mbmhub.dontkillonstandoff) do
 					if b ~= v.Name then
 	
 					table.insert(newtable, b)
 					end
 				end
-				rubyhub.dontkillonstandoff = newtable
+				mbmhub.dontkillonstandoff = newtable
 			end
 		end
 	end
@@ -276,24 +285,24 @@ Tabs.farmsettings:AddButton({
 	Title = "Clear List",
 	Description = "Clears don't kill List",
 	Callback = function()
-		rubyhub.dontkillonstandoff = {}
+		mbmhub.dontkillonstandoff = {}
 	end
 })
 Tabs.farmsettings:AddSection("Auto Parry Settings")
 local stayundergroundtoggle = Tabs.farmsettings:AddToggle("stayunderground", {Title = "Stay Underground", Default = true })
 stayundergroundtoggle:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.stayunderground = true
+		mbmhub.stayunderground = true
 	else
-		rubyhub.stayunderground = false
+		mbmhub.stayunderground = false
 	end
 end)
 local legitap = Tabs.farmsettings:AddToggle("legitmode", {Title = "Legit Auto Parry Mode", Default = false })
 legitap:OnChanged(function(toggled)
 	if toggled then
-		rubyhub.legitautoparry = true
+		mbmhub.legitautoparry = true
 	else
-		rubyhub.legitautoparry = false
+		mbmhub.legitautoparry = false
 	end
 end)
 
@@ -301,27 +310,27 @@ end)
 task.spawn(function()
 	while task.wait() do
 		local toset = "";
-		for i, walterwhite in pairs(rubyhub.dontkillonstandoff) do
+		for i, walterwhite in pairs(mbmhub.dontkillonstandoff) do
 			toset = toset .. "\n" .. walterwhite
 		end
 		whitelistedplayers:SetDesc(toset)
-		if rubyhub.openexplosion then
+		if mbmhub.openexplosion then
 			game:GetService("ReplicatedStorage").Remotes.Store.RequestOpenExplosionBox:InvokeServer()
 		end
-		if rubyhub.opensword then
+		if mbmhub.opensword then
 			game:GetService("ReplicatedStorage").Remotes.Store.RequestOpenSwordBox:InvokeServer()
 		end
-		if rubyhub.selectffa then
+		if mbmhub.selectffa then
 			game:GetService("ReplicatedStorage").Remotes.UpdateVotes:FireServer("ffa")
-		elseif rubyhub.select2v2 then
+		elseif mbmhub.select2v2 then
 			game:GetService("ReplicatedStorage").Remotes.UpdateVotes:FireServer("2t")
-		elseif rubyhub.select4v4 then
+		elseif mbmhub.select4v4 then
 			game:GetService("ReplicatedStorage").Remotes.UpdateVotes:FireServer("4t")
 		end
-		if rubyhub.skipcasecooldown then
+		if mbmhub.skipcasecooldown then
 			game:GetService("ReplicatedStorage").Remotes.OpeningCase:FireServer(false)
 		end
-		if rubyhub.autospin then
+		if mbmhub.autospin then
 			game:GetService("ReplicatedStorage").Remotes.useSpin:InvokeServer()
 		end
 	end
@@ -331,9 +340,14 @@ SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
 SaveManager:IgnoreThemeSettings()
 SaveManager:SetIgnoreIndexes({})
-InterfaceManager:SetFolder("Ruby Hub")
+InterfaceManager:SetFolder("Mbm Hub")
 SaveManager:SetFolder("Blade Ball (Premium)")
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 SaveManager:LoadAutoloadConfig()
+
+task.delay(25 * 60,function() -- hop every 25 min
+   
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hop/main/server/every"))()
+end)
