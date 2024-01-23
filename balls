@@ -8,18 +8,17 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-	Title = "Ruby Hub",
+	Title = "Dakii Hub",
 	SubTitle = "by Deni210",
-	TabWidth = 160,
-	Size = UDim2.fromOffset(580, 460),
+	TabWidth = 100,
+	Size = UDim2.fromOffset(400, 300),
 	Acrylic = true,
-	Theme = "Dark",
+	Theme = "Darker",
 	MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
 	Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://14521909814" }),
 	farmsettings = Window:AddTab({ Title = "Farming Settings", Icon = "rbxassetid://14521909814" }),
-	Settings = Window:AddTab({ Title = "UI Settings", Icon = "settings" })
 }
 local rubyhub = {
 	autoparrying = false,
@@ -36,7 +35,7 @@ local rubyhub = {
 }
 
 function notify(title, content)
-	if title and not content then content = title; title = "Ruby Hub" end
+	if title and not content then content = title; title = "Dakii Hub" end
 	Fluent:Notify({
 		Title = title,
 		Content = content,
@@ -65,8 +64,8 @@ end
 
 local Options = Fluent.Options
 
-notify("Thanks for using Ruby Hub!")
-notify("Inspired by Amir (wer denn sunst)")
+notify("Welcome to Dakii Hub Balde Ball")
+notify("Made by Dakii(tdat)")
 
 Tabs.Main:AddSection("Main")
 local autoparry = Tabs.Main:AddToggle("autoparry", {Title = "Auto Parry", Default = false })
@@ -233,11 +232,11 @@ Tabs.Main:AddButton({
 })
 Tabs.farmsettings:AddSection("Don't Kill")
 local whitelistedplayers = Tabs.farmsettings:AddParagraph({
-	Title = "Don't Kill list",
+	Title = "blacklist Player",
 	Content = "none"
 })
 local whitelistplayer = Tabs.farmsettings:AddInput("whitelistplayer", {
-	Title = "Don't kill Player on standoff",
+	Title = "Will not kill this Player in standoff",
 	Default = "",
 	Placeholder = "Short username or displayname allowed",
 	Numeric = false,
@@ -273,8 +272,8 @@ local unwhitelistplayer = Tabs.farmsettings:AddInput("unwhitelist", {
 })
 
 Tabs.farmsettings:AddButton({
-	Title = "Clear List",
-	Description = "Clears don't kill List",
+	Title = "Refesh",
+	Description = "Clears backlist kill List",
 	Callback = function()
 		rubyhub.dontkillonstandoff = {}
 	end
@@ -331,8 +330,8 @@ SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
 SaveManager:IgnoreThemeSettings()
 SaveManager:SetIgnoreIndexes({})
-InterfaceManager:SetFolder("Ruby Hub")
-SaveManager:SetFolder("Blade Ball (Premium)")
+InterfaceManager:SetFolder("Dakii Hub")
+SaveManager:SetFolder("Blade ball(dakii hub)")
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
