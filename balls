@@ -1,11 +1,3 @@
---[[
-    script made my minh - or call me by the name you like
-    18/10/2018/ ? VN
-
-    bio : https://bio.site/m1m - my server : https://dsc.gg/m1m-link
-    mbm x hub - blox fruits
---]]
-
         print("made by minh hub")
         print("mbm x hub")
         print("join my discord server : https://dsc.gg/m1m-link")
@@ -167,6 +159,14 @@ autoparry:OnChanged(function(toggled)
 	end
 end)
 Tabs.Main:AddSection("Crates")
+Tabs.Main:AddButton({
+    Title = "tele ball auto parry (beta)",
+    Description = "can't stop",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/beta.lua"))()
+
+                    end
+                })
 local autoexplosion = Tabs.Main:AddToggle("autoexplosion", {Title = "Auto Open Explosion Crate", Default = false })
 autoexplosion:OnChanged(function(toggled)
 	if toggled then
