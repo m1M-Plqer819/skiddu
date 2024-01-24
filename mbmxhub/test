@@ -1,4 +1,5 @@
--- Create a UI library module
+-- UI Library
+
 local UI = {}
 
 -- Function to create a basic button
@@ -33,5 +34,4 @@ function UI.createTextBox(parent, position, size)
     return textBox
 end
 
--- Export the UI library module
 return UI
