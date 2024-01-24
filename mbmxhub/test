@@ -1,3 +1,4 @@
+---[Notify Má»›i LÃ m:))]
 local Notif = {}
 
 local CoreGUI = game:GetService("CoreGui")
@@ -52,7 +53,7 @@ function Notif.New(text, timee)
     local frame_3 = Instance.new("Frame")
     frame_3.AnchorPoint = Vector2.new(0.5, 1)
     frame_3.AutomaticSize = Enum.AutomaticSize.X
-    frame_3.BackgroundColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+    frame_3.BackgroundColor3 = Color3.new(066, 230, 245)
     frame_3.BackgroundTransparency = 0.20000000298023224
     frame_3.BorderColor3 = Color3.new(0, 0, 0)
     frame_3.Position = UDim2.new(0.5, 0, 1, 60)
@@ -73,13 +74,13 @@ function Notif.New(text, timee)
 
     local uistroke = Instance.new("UIStroke")
     uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    uistroke.Color = Color3.new(0.0313726, 0.0313726, 0.0313726)
+    uistroke.Color = Color3.new(66, 230, 245)
     uistroke.Parent = frame_3
 
     local text_label = Instance.new("TextLabel")
     text_label.Font = Enum.Font.Gotham
     text_label.Text = text
-    text_label.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+    text_label.TextColor3 = Color3.new(66, 230, 245)
     text_label.TextSize = 14
     text_label.AutomaticSize = Enum.AutomaticSize.X
     text_label.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -115,8 +116,8 @@ function Notif.New(text, timee)
     uicorner_2.Parent = text_button
 
     local image_button = Instance.new("ImageButton")
-    image_button.Image = "rbxassetid://10162644180"
-    image_button.ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+    image_button.Image = "rbxassetid://15935048014"
+    image_button.ImageColor3 = Color3.new(66, 230, 245)
     image_button.ImageRectOffset = Vector2.new(924, 724)
     image_button.ImageRectSize = Vector2.new(36, 36)
     image_button.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -148,13 +149,13 @@ function Notif.New(text, timee)
     text_button.MouseEnter:Connect(function()
         TS:Create(text_button, TweenInfo.new(0.25, Enum.EasingStyle.Quint), { BackgroundTransparency = 0.8 }):Play()
         TS:Create(image_button, TweenInfo.new(0.3, Enum.EasingStyle.Quint),
-            { ImageColor3 = Color3.new(0.890196, 0.054902, 0.054902) }):Play()
+            { ImageColor3 = Color3.new(66, 230, 245) }):Play()
     end)
 
     text_button.MouseLeave:Connect(function()
         TS:Create(text_button, TweenInfo.new(0.25, Enum.EasingStyle.Quint), { BackgroundTransparency = 1 }):Play()
         TS:Create(image_button, TweenInfo.new(0.3, Enum.EasingStyle.Quint),
-            { ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314) }):Play()
+            { ImageColor3 = Color3.new(66, 230, 245) }):Play()
     end)
 
     text_button.MouseButton1Click:Connect(function()
@@ -189,7 +190,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 70, 0, 70)
 ImageButton1.Draggable = true
-ImageButton1.Image = "http://www.roblox.com/asset/?id=15860672267"
+ImageButton1.Image = "http://www.roblox.com/asset/?id=15935048014"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -282,7 +283,7 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Update = {}
-local pfp = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
+local pfp = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."15935048014"
 
 function Update:Window(text,logo,keybind)
     local osfunc = {}
@@ -313,7 +314,7 @@ function Update:Window(text,logo,keybind)
     BtnStroke.Name = "BtnStroke"
     BtnStroke.Parent = Main
     BtnStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    BtnStroke.Color = Color3.fromRGB(255, 0, 0)
+    BtnStroke.Color = Color3.fromRGB(66, 230, 245)
     BtnStroke.LineJoinMode = Enum.LineJoinMode.Round
     BtnStroke.Thickness = 1
     BtnStroke.Transparency = 0
@@ -360,8 +361,8 @@ function Update:Window(text,logo,keybind)
     Ping.Position = UDim2.new(0.28, 0,0.074, 0)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
-    Ping.Text = "             | DAKII HUB |                  "
-    Ping.TextColor3 = Color3.fromRGB(255,255,255)
+    Ping.Text = "                               | DAKII HUB |                  "
+    Ping.TextColor3 = Color3.fromRGB(66, 230, 245)
     Ping.TextSize = 14.000
     Ping.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -401,7 +402,7 @@ function Update:Window(text,logo,keybind)
     UserImage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     UserImage.Position = UDim2.new(0, 10, 0, -15)
     UserImage.Size = UDim2.new(0, 25, 0, 25)
-    UserImage.Image = "rbxassetid://10162644180"
+    UserImage.Image = "rbxassetid://15935048014"
     local UserImageCorner = Instance.new("UICorner")
     UserImageCorner.CornerRadius = UDim.new(0, 100)
     UserImageCorner.Name = "UserImageCorner"
@@ -414,7 +415,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
-	Logo.Image = "rbxassetid://10162644180"
+	Logo.Image = "rbxassetid://15935048014"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
     Tab.Parent = Main
@@ -469,7 +470,7 @@ Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Page.BackgroundTransparency = 1.10
 Page.Position = UDim2.new(0.265426834, 0, 0.075000003, 0)
 Page.Size = UDim2.new(0, 400, 0, 400)
-Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
+Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15935048014)
 
     local MainPage = Instance.new("Frame")
     MainPage.Name = "MainPage"
@@ -788,7 +789,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
     local main = {}
     function main:AddButton(text, callback)
         if logo == nil then
-            logo = "15009422255"
+            logo = "15935048014"
         end
         local Button = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
@@ -825,7 +826,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 350, 0, 6)
         ImageButton.Size = UDim2.new(0, 20, 0, 20)
-        ImageButton.Image = "rbxassetid://10162644180"
+        ImageButton.Image = "rbxassetid://15935048014"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -888,7 +889,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
     function main:AddToggle(TogInfo ,default, callback)
         local toggle = false
         if logo == nil then
-            logo = "15009422255"
+            logo = "15935048014"
         end
         local CheckFrame = Instance.new("Frame")
         local CheckFrame2 = Instance.new("Frame")
@@ -935,7 +936,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://10162644180"
+        ImageLabel.Image = "rbxassetid://15935048014"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -969,7 +970,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageButton.Position = UDim2.new(0, 352, 0, 4)
         ImageButton.Size = UDim2.new(0, 23, 0, 23)
         ImageButton.ZIndex = 2
-        ImageButton.Image = "rbxassetid://10162644180"
+        ImageButton.Image = "rbxassetid://15935048014"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
         ImageButton.ImageRectOffset = Vector2.new(940, 784)
         ImageButton.ImageRectSize = Vector2.new(48, 48)
@@ -1072,7 +1073,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 
         DropButton.Name = "DropButton"
         DropButton.Parent = Dropdown
-        DropButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        DropButton.BackgroundColor3 = Color3.fromRGB(66, 230, 245)
         DropButton.BackgroundTransparency = 1.000
         DropButton.Size = UDim2.new(0, 385, 0, 31)
         DropButton.Font = Enum.Font.SourceSans
@@ -1087,7 +1088,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         DropImage.Position = UDim2.new(0, 350, 0, 6)
         DropImage.Rotation = 180.000
         DropImage.Size = UDim2.new(0, 20, 0, 20)
-        DropImage.Image = "rbxassetid://10162644180"
+        DropImage.Image = "rbxassetid://15935048014"
 
         for i,v in next,option do
             local Item = Instance.new("TextButton")
@@ -1272,7 +1273,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         UIStroke.Name = "UIStroke"
         UIStroke.Parent = SliderFrame_2
         UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        UIStroke.Color = Color3.fromRGB(255, 0, 0)
+        UIStroke.Color = Color3.fromRGB(66, 230, 245)
         UIStroke.LineJoinMode = Enum.LineJoinMode.Round
         UIStroke.Thickness = 1
         UIStroke.Transparency = 0
@@ -1289,10 +1290,10 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://10162644180"
+        ImageLabel.Image = "rbxassetid://15935048014"
             
         Title.Parent = SliderFrame_2
-        Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+        Title.BackgroundColor3 = Color3.fromRGB(66, 230, 245)
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0, 45, 0, 5)
         Title.Size = UDim2.new(0, 280, 0, 30)
@@ -1352,7 +1353,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         SliderStroke.Name = "SliderStroke"
         SliderStroke.Parent = BoxFrame
         SliderStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        SliderStroke.Color = Color3.fromRGB(255, 0, 0)
+        SliderStroke.Color = Color3.fromRGB(66, 230, 245)
         SliderStroke.LineJoinMode = Enum.LineJoinMode.Round
         SliderStroke.Thickness = 1
         SliderStroke.Transparency = 0.5
@@ -1574,7 +1575,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 
         Textbox.Name = "Textbox"
         Textbox.Parent = MainFramePage
-        Textbox.BackgroundColor3 = Color3.new(255, 0, 0)
+        Textbox.BackgroundColor3 = Color3.new(66, 230, 245)
         Textbox.BackgroundTransparency = 0
         Textbox.Size = UDim2.new(0, 387, 0, 31)
 
@@ -1594,7 +1595,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 
         TextboxLabel.Name = "TextboxLabel"
         TextboxLabel.Parent = Textbox
-        TextboxLabel.BackgroundColor3 = Color3.fromRGB(255, 128,0)
+        TextboxLabel.BackgroundColor3 = Color3.fromRGB(66, 230, 245)
         TextboxLabel.BackgroundTransparency = 1.000
         TextboxLabel.Position = UDim2.new(0, 15, 0, 0)
         TextboxLabel.Text = text
@@ -1703,7 +1704,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         
         Textbox.Name = "Textbox"
         Textbox.Parent = MainFramePage
-        Textbox.BackgroundColor3 = Color3.new(255, 0, 0)
+        Textbox.BackgroundColor3 = Color3.new(66, 230, 245)
         Textbox.BackgroundTransparency = 0
         Textbox.Size = UDim2.new(0, 387, 0, 31)
         
@@ -1753,7 +1754,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         RealTextbox.Size = UDim2.new(0, 100, 0, 24)
         RealTextbox.Font = Enum.Font.GothamSemibold
         RealTextbox.Text = ""
-        RealTextbox.TextColor3 = Color3.fromRGB(255, 0, 0)
+        RealTextbox.TextColor3 = Color3.fromRGB(66, 230, 245)
         RealTextbox.TextSize = 11.000
         RealTextbox.TextTransparency = 0
 
@@ -1909,7 +1910,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         
         Line.Name = "Line"
         Line.Parent = Linee
-        Line.BackgroundColor3 = Color3.new(255, 0, 0)
+        Line.BackgroundColor3 = Color3.new(66, 230, 245)
         Line.BorderSizePixel = 0
         Line.Position = UDim2.new(0, 0, 0, 10)
         Line.Size = UDim2.new(0, 410, 0, 1)
@@ -1919,7 +1920,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 end
 return uitab
 end
----- Káº¿t KhÃºc Ui
+
 
 function intiAppleHub() 
 _G.antiscan = true
@@ -3828,7 +3829,7 @@ getgenv().HyperCahayas = function(p)
     end)
     
 
-local Library = Update:Window("DAKII Hub","",Enum.KeyCode.RightControl);
+local Library = Update:Window("SUKUNA Hub","",Enum.KeyCode.RightControl);
 
 --local NguyenTien = Library:AddTab("Information","4483345998")
 local Main = Library:AddTab("Main","4483345998")
@@ -7051,7 +7052,7 @@ wait(0.5)
 elseif state and (not findItem("Monster Magnet", 1) or not findItem("Terror Eyes", 2) and not findItem("Electric Wing", 8) and not findItem("Fool's Gold", 20) and not findItem("Shark Tooth", 10)) then
     _G.BjirAnchorCuy = false
     game.StarterGui:SetCore("SendNotification", {
-        Icon = "rbxassetid://10162644180",
+        Icon = "rbxassetid://15935048014",
         Title = "! WARNING !", 
         Text = "You need more materials \nto buy a Monster Magnet."
     })
@@ -9319,7 +9320,7 @@ end)
                 if _G.AutoObservation then
                     if game:GetService("Players").LocalPlayer.VisionRadius.Value >= 3000 then
                         game:GetService("StarterGui"):SetCore("SendNotification", {
-                            Icon = "rbxassetid://10162644180";
+                            Icon = "rbxassetid://0";
                             Title = "Status Observation", 
                             Text = "You Have Max Points"
                         })
@@ -10842,7 +10843,7 @@ tween:Play()
 
 local SoundSFX = Instance.new("Sound")
 SoundSFX.Parent = workspace
-SoundSFX.SoundId = "rbxassetid://10162644180"
+SoundSFX.SoundId = "rbxassetid://15935048014"
 SoundSFX:Play()
 SoundSFX.Name = "POwfpxzxzfFfFF"
 game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt:FindFirstChild("ProximityPrompt"):Remove()
@@ -13688,7 +13689,7 @@ Misc:AddButton("Kaitun Cap", function(value)
 		for k,v in pairs(cac) do
 			if ListHuhu[v] and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy"..v,true) == 1 then 
 				local huhu = Instance.new("ImageLabel",MeleeG)
-				huhu.Image = "rbxassetid://10162644180"
+				huhu.Image = "rbxassetid://15935048014"
 				huhu.ImageRectSize = Vector2.new(100,100)
 				huhu.ImageRectOffset = ListHuhu[v]*100
 			end
@@ -13703,7 +13704,7 @@ Misc:AddButton("Kaitun Cap", function(value)
 		thieunang.Parent = game:GetService("Players").LocalPlayer.PlayerGui.BubbleChat
 		thieunang.Position = UDim2.new(0,800,0.63,0)
 		local n = formatNumber(game.Players.LocalPlayer.Data.Fragments.Value)
-		thieunang.Text = "ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢"..n
+		thieunang.Text = "wth"..n
 		print("Done")
 		pcall(function() 
 			game:GetService("Players").LocalPlayer.PlayerGui.Main.MenuButton:Destroy()
