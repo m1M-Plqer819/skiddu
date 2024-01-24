@@ -1,4 +1,4 @@
-_G.Mode = English
+
 do
     local ui = game:GetService("CoreGui").RobloxGui.Modules.Profile:FindFirstChild("UILibrary")
     if ui then ui:Destroy() end
