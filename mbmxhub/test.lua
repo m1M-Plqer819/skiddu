@@ -14117,12 +14117,23 @@ spawn(function()
         end
     end)
     end)
+
+spawn(function()
+    while wait() do
+    for i,v in pairs(game.Players:GetPlayers()) do
+        if v.Name == "red_game43" or v.Name == "rip_indra" or v.Name == "Axiore" or v.Name == "Polkster" or v.Name == "wenlocktoad" or v.Name == "Daigrock" or v.Name == "toilamvidamme" or v.Name == "oofficialnoobie" or v.Name == "Uzoth" or v.Name == "Azarth" or v.Name == "arlthmetic" or v.Name == "Death_King" or v.Name == "Lunoven" or v.Name == "TheGreateAced" or v.Name == "rip_fud" or v.Name == "drip_mama" or v.Name == "layandikit12" or v.Name == "Hingoi" then
+            Hop()
+            end
+        end
+    end
+end)
+
 --15582682098--mbm  x  Hub
-             print("made by minh hub")
-             print("mbm x hub")
-             print("join my discord server : https://dsc.gg/m1m-link")
-             print("bio : https://bio.site/m1m")
-             print("ty for using - have fun")
-             print("skidded")
-             print("wait ,.,")
-             print("LCTSV - .,.")
+                          print("made by minh hub")
+                          print("mbm x hub")
+                          print("join my discord server : https://dsc.gg/m1m-link")
+                          print("bio : https://bio.site/m1m")
+                          print("ty for using - have fun")
+                          print("skidded")
+                          print("wait ,.,")
+                          print("LCTSV - .,.")
