@@ -14075,22 +14075,6 @@ end)
 			end
 		end)
     
-    Misc:AddToggle("NoClip",_G.NOCLIP,function(value)
-        _G.NOCLIP = value
-    end)
-	
-    spawn(function()
-        while wait() do
-            if sethiddenproperty then
-                sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",100)
-            end
-            if setscriptable then
-                setscriptable(game.Players.LocalPlayer, "SimulationRadius", true)
-                game.Players.LocalPlayer.SimulationRadius = math.huge * math.huge, math.huge * math.huge * 0 / 0 * 0 / 0 * 0 / 0 * 0 / 0 * 0 / 0
-            end
-        end
-    end)
-    
     Misc:AddButton("Remove Lave",function()
 		for i,v in pairs(game.Workspace:GetDescendants()) do
 			if v.Name == "Lava" then   
@@ -14102,7 +14086,8 @@ end)
 				v:Destroy()
 			end
 		end
-	end)
+	end
+end)
 
 _G.Remove_Effect = true
 
