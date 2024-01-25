@@ -14127,13 +14127,3 @@ spawn(function()
         end
     end
 end)
-
---15582682098--mbm  x  Hub
-                          print("made by minh hub")
-                          print("mbm x hub")
-                          print("join my discord server : https://dsc.gg/m1m-link")
-                          print("bio : https://bio.site/m1m")
-                          print("ty for using - have fun")
-                          print("skidded")
-                          print("wait ,.,")
-                          print("LCTSV - .,.")
