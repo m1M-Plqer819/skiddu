@@ -108,8 +108,8 @@ local function createButton(name, position, text)
 end
 
 local getKeyButton = createButton("GetKeyButton", UDim2.new(0, 0, 0, 0), "Get Key")
-local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "prem code log")
-local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "buy key")
+local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Login")
+local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy Key")
 
 getKeyButton.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
