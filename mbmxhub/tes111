@@ -1,4 +1,4 @@
-local key = 'link vertise or loot link idk:)'
+local key = 'link vertise or loot link idk'
 local discordLink = 'https://discord.gg/s6yydxTy8f'
 local uniqueKey = game:HttpGet'https://raw.githubusercontent.com/m1M-Plqer819/dakiiuem/main/ks.txt';
 
