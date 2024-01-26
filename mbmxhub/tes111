@@ -129,7 +129,7 @@ loginButton.MouseButton1Click:Connect(function()
             Text = "wait script...",
             Duration = 4
         })
-        loadstring(https://raw.githubusercontent.com/dakiiuem/DakiiV2/main/MainV2)()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dakiiuem/DakiiV2/main/MainV2", true))()
         gui:Destroy()
     else
         game.StarterGui:SetCore("SendNotification", {
