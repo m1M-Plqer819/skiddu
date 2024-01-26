@@ -1,4 +1,4 @@
-local key = 'link get key'
+local key = 'https://loot-link.com/s?nxdi'
 local discordLink = 'https://discord.gg/s6yydxTy8f';
 local uniqueKey = game:HttpGet'https://raw.githubusercontent.com/m1M-Plqer819/dakiiuem/main/ks.txt';
 
