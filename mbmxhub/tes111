@@ -1,9 +1,9 @@
-local key = 'link vertise or loot link idk'
-local discordLink = 'https://discord.gg/s6yydxTy8f'
-local uniqueKey = game:HttpGet'https://raw.githubusercontent.com/m1M-Plqer819/dakiiuem/main/ks.txt';
+local linkvertise = 'https://shorten.tv/yl_Ph'
+local discordLink = 'https://discord.gg/KAjqmrqSC6'
+local uniqueKey = game:HttpGet'https://pastebin.com/raw/fFHiwNQT';
 
 local thescript = [[
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/dakiiuem/DakiiV2/main/MainV2", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/mains"))()
 ]]
 
 local gui = Instance.new("ScreenGui")
@@ -32,7 +32,7 @@ background.Name = "Background"
 background.Parent = frame
 background.BackgroundTransparency = 1
 background.Size = UDim2.new(1, 0, 1, 0)
-background.Image = "http://www.roblox.com/asset/?id=15933497653"
+background.Image = "http://www.roblox.com/asset/?id=16102119639"
 
 local title = Instance.new("TextLabel")
 title.Name = "Title"
@@ -41,9 +41,9 @@ title.BackgroundTransparency = 1
 title.Size = UDim2.new(1, 0, 0, 30)
 title.Position = UDim2.new(0, 0, 0, 10)
 title.Font = Enum.Font.Ubuntu
-title.Text = "Dakii Hub"
+title.Text = "Sukuna Hub"
 title.TextSize = 24
-title.TextColor3 = Color3.fromRGB(52, 235, 216)
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
 
 local logo = Instance.new("ImageLabel")
 logo.Name = "Logo"
@@ -52,7 +52,7 @@ logo.BackgroundTransparency = 1
 logo.Size = UDim2.new(0.5, 0, 0.5, 0)
 logo.Position = UDim2.new(0.5, 0, 0, 35)
 logo.AnchorPoint = Vector2.new(0.5, 0)
-logo.Image = "http://www.roblox.com/asset/?id=16096559635"
+logo.Image = "http://www.roblox.com/asset/?id=15860672267"
 
 local closeButton = Instance.new("TextButton")
 closeButton.Name = "CloseButton"
@@ -113,11 +113,11 @@ local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy 
 
 getKeyButton.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Dakii Hub",
-        Text = "https://discord.gg/s6yydxTy8f",
+        Title = "Sukuna Hub",
+        Text = "Por favor, vá para a URL que foi copiada para a sua área de transferência.",
         Duration = 4
     })
-    setclipboard(key)
+    setclipboard(linkvertise)
 end)
 
 loginButton.MouseButton1Click:Connect(function()
@@ -125,16 +125,16 @@ loginButton.MouseButton1Click:Connect(function()
 
     if enteredKey == uniqueKey then
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Dakii Hub",
-            Text = "wait script...",
+            Title = "Sukuna Hub",
+            Text = "Chave correta! Carregando script...",
             Duration = 4
         })
-        loadstring(dikaa hub paid :)? maybe)()
+        loadstring(thescript)()
         gui:Destroy()
     else
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Dakii Hub",
-            Text = "have fun",
+            Title = "Sukuna Hub",
+            Text = "Chave inválida!",
             Duration = 4
         })
     end
@@ -142,8 +142,8 @@ end)
 
 buyKeyButton.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Dakii Hub",
-        Text = "w",
+        Title = "Sukuna Hub",
+        Text = "Link para comprar a chave copiado para a área de transferência.",
         Duration = 4
     })
     setclipboard(discordLink)
