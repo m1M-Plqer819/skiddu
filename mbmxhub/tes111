@@ -7,7 +7,7 @@ local thescript = [[
 ]]
 
 local gui = Instance.new("ScreenGui")
-gui.Name = "AlphaHubGUI"
+gui.Name = "DakiiHubGUI"
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local frame = Instance.new("Frame")
@@ -71,7 +71,7 @@ closeButton.MouseButton1Click:Connect(function()
     gui:Destroy()
 end)
 
-local keyTextBox = Instance.new("TextBox")
+local keyTextBox = Instance.new("Key or premium code (in discord)")
 keyTextBox.Name = "KeyTextBox"
 keyTextBox.Parent = frame
 keyTextBox.Size = UDim2.new(0.7, 0, 0, 30)
@@ -108,8 +108,8 @@ local function createButton(name, position, text)
 end
 
 local getKeyButton = createButton("GetKeyButton", UDim2.new(0, 0, 0, 0), "Get Key")
-local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Login")
-local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy Key")
+local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "prem code log")
+local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "buy key")
 
 getKeyButton.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
@@ -125,11 +125,11 @@ loginButton.MouseButton1Click:Connect(function()
 
     if enteredKey == uniqueKey then
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Sukuna Hub",
+            Title = "Dakii Hub",
             Text = "wait script...",
             Duration = 4
         })
-        loadstring(thescript)()
+        loadstring(dikaa hub paid :)? maybe)()
         gui:Destroy()
     else
         game.StarterGui:SetCore("SendNotification", {
