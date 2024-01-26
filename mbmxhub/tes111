@@ -7,7 +7,7 @@ local thescript = [[
 ]]
 
 local gui = Instance.new("ScreenGui")
-gui.Name = "DakiiHubGUI"
+gui.Name = "AlphaHubGUI"
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local frame = Instance.new("Frame")
