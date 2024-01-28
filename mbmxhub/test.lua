@@ -79,7 +79,7 @@ spawn(function()
     end
 end)
 
-task.delay(2 * 60,function() -- hop every 2 min
+task.delay(1 * 60,function() -- hop every 2 min
    
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/hop/main/server/every"))()
 end)
