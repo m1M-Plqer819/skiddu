@@ -1,5 +1,3 @@
-
-    repeat
         task.wait(4)
     until game:IsLoaded()
     local a = game.PlaceId
