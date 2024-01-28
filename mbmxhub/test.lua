@@ -1,4 +1,4 @@
-if _G.ChestBypass then
+if _G.ChestBypass == true then
     repeat
         task.wait(4)
     until game:IsLoaded()
