@@ -32,6 +32,24 @@ if _G.ChestBypass then
 end
 end)
 
+noclip = true
+game:GetService('RunService').Stepped:Connect(function()
+	if noclip then
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		
+	end
+end)
+
+local p = game.Players.LocalPlayer
+local mo = p:GetMouse()
+
+mo.KeyDown:Connect(function(k)
+	if k == 'e' then
+		noclip = not noclip
+		p.Character.Humanoid:ChangeState(11)
+	end
+end)
+
 spawn(function()
     while wait() do
     for i,v in pairs(game.Players:GetPlayers()) do
